@@ -18,4 +18,6 @@
     Private Sub InputLabel_Click(sender As Object, e As EventArgs) Handles InputLabel.Click
 
     End Sub
+
+    
 End Class
