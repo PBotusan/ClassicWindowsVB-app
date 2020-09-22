@@ -4,4 +4,16 @@
         TaskbarTimeLabel.Text = currentTime
         TaskbarDateLabel.Text = DateTime.Now.Date
     End Sub
+
+    Private Sub CalculatorButton_Click(sender As Object, e As EventArgs) Handles CalculatorButton.Click
+        'Create a new instance of the form class'
+        Dim calculatorForm As New CalculatorForm
+
+        'Show the calculator form'
+        calculatorForm.Show()
+    End Sub
+
+    Private Sub TaskbarStartButton_Click(sender As Object, e As EventArgs) Handles TaskbarStartButton.Click
+
+    End Sub
 End Class
