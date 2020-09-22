@@ -1,23 +1,5 @@
 ﻿Public Class CalculatorForm
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles MSButton.Click
+    Private Sub User_button_click(sender As Object, e As EventArgs) Handles DigitZeroButton.Click, SquareRootButton.Click, PlusMinusButton.Click, OnmeTimesXButton.Click, MSButton.Click, MRButton.Click, MPlusButton.Click, ModuloButton.Click, MCButton.Click, EqualsButton.Click, DigitTwoButton.Click, DigitThreeButton.Click, DigitSixButton.Click, DigitSevenButton.Click, DigitPointButton.Click, DigitOneButton.Click, DigitNineButton.Click, DigitFourButton.Click, DigitFiveButton.Click, DigitEightButton.Click, ClearButton.Click, ClearAllButton.Click, BackButton.Click
 
     End Sub
-
-    Private Sub BackButton_Click(sender As Object, e As EventArgs) Handles BackButton.Click
-
-    End Sub
-
-    Private Sub Button26_Click(sender As Object, e As EventArgs) Handles ClearButton.Click
-
-    End Sub
-
-    Private Sub CalculatorForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub InputLabel_Click(sender As Object, e As EventArgs) Handles InputLabel.Click
-
-    End Sub
-
-    
 End Class

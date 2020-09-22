@@ -24,6 +24,10 @@ Partial Class CalculatorForm
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CalculatorForm))
         Me.CalculatorPanel = New System.Windows.Forms.Panel()
+        Me.CalculatorTopBar = New System.Windows.Forms.Panel()
+        Me.HelpButton = New System.Windows.Forms.Button()
+        Me.ViewButton = New System.Windows.Forms.Button()
+        Me.EditButton = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.UserInputLabel = New System.Windows.Forms.FlowLayoutPanel()
@@ -55,13 +59,9 @@ Partial Class CalculatorForm
         Me.MRButton = New System.Windows.Forms.Button()
         Me.MSButton = New System.Windows.Forms.Button()
         Me.MPlusButton = New System.Windows.Forms.Button()
-        Me.CalculatorTopBar = New System.Windows.Forms.Panel()
-        Me.EditButton = New System.Windows.Forms.Button()
-        Me.ViewButton = New System.Windows.Forms.Button()
-        Me.HelpButton = New System.Windows.Forms.Button()
         Me.CalculatorPanel.SuspendLayout
-        Me.UserInputLabel.SuspendLayout
         Me.CalculatorTopBar.SuspendLayout
+        Me.UserInputLabel.SuspendLayout
         Me.SuspendLayout
         '
         'CalculatorPanel
@@ -105,6 +105,60 @@ Partial Class CalculatorForm
         Me.CalculatorPanel.Name = "CalculatorPanel"
         Me.CalculatorPanel.Size = New System.Drawing.Size(445, 432)
         Me.CalculatorPanel.TabIndex = 0
+        '
+        'CalculatorTopBar
+        '
+        Me.CalculatorTopBar.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.CalculatorTopBar.BackColor = System.Drawing.Color.Gainsboro
+        Me.CalculatorTopBar.Controls.Add(Me.HelpButton)
+        Me.CalculatorTopBar.Controls.Add(Me.ViewButton)
+        Me.CalculatorTopBar.Controls.Add(Me.EditButton)
+        Me.CalculatorTopBar.Location = New System.Drawing.Point(2, -2)
+        Me.CalculatorTopBar.Name = "CalculatorTopBar"
+        Me.CalculatorTopBar.Size = New System.Drawing.Size(441, 44)
+        Me.CalculatorTopBar.TabIndex = 31
+        '
+        'HelpButton
+        '
+        Me.HelpButton.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.HelpButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.HelpButton.FlatAppearance.BorderSize = 0
+        Me.HelpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.HelpButton.Font = New System.Drawing.Font("Verdana", 12!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.HelpButton.Location = New System.Drawing.Point(136, 3)
+        Me.HelpButton.Name = "HelpButton"
+        Me.HelpButton.Size = New System.Drawing.Size(62, 36)
+        Me.HelpButton.TabIndex = 2
+        Me.HelpButton.Text = "Help"
+        Me.HelpButton.UseVisualStyleBackColor = true
+        '
+        'ViewButton
+        '
+        Me.ViewButton.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ViewButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ViewButton.FlatAppearance.BorderSize = 0
+        Me.ViewButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ViewButton.Font = New System.Drawing.Font("Verdana", 12!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.ViewButton.Location = New System.Drawing.Point(68, 3)
+        Me.ViewButton.Name = "ViewButton"
+        Me.ViewButton.Size = New System.Drawing.Size(62, 36)
+        Me.ViewButton.TabIndex = 1
+        Me.ViewButton.Text = "View"
+        Me.ViewButton.UseVisualStyleBackColor = true
+        '
+        'EditButton
+        '
+        Me.EditButton.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.EditButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.EditButton.FlatAppearance.BorderSize = 0
+        Me.EditButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.EditButton.Font = New System.Drawing.Font("Verdana", 12!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.EditButton.Location = New System.Drawing.Point(0, 3)
+        Me.EditButton.Name = "EditButton"
+        Me.EditButton.Size = New System.Drawing.Size(62, 38)
+        Me.EditButton.TabIndex = 0
+        Me.EditButton.Text = "Edit"
+        Me.EditButton.UseVisualStyleBackColor = true
         '
         'Panel2
         '
@@ -497,60 +551,6 @@ Partial Class CalculatorForm
         Me.MPlusButton.Text = "M+"
         Me.MPlusButton.UseVisualStyleBackColor = true
         '
-        'CalculatorTopBar
-        '
-        Me.CalculatorTopBar.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.CalculatorTopBar.BackColor = System.Drawing.Color.Gainsboro
-        Me.CalculatorTopBar.Controls.Add(Me.HelpButton)
-        Me.CalculatorTopBar.Controls.Add(Me.ViewButton)
-        Me.CalculatorTopBar.Controls.Add(Me.EditButton)
-        Me.CalculatorTopBar.Location = New System.Drawing.Point(2, -2)
-        Me.CalculatorTopBar.Name = "CalculatorTopBar"
-        Me.CalculatorTopBar.Size = New System.Drawing.Size(441, 44)
-        Me.CalculatorTopBar.TabIndex = 31
-        '
-        'EditButton
-        '
-        Me.EditButton.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.EditButton.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.EditButton.FlatAppearance.BorderSize = 0
-        Me.EditButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.EditButton.Font = New System.Drawing.Font("Verdana", 12!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.EditButton.Location = New System.Drawing.Point(0, 3)
-        Me.EditButton.Name = "EditButton"
-        Me.EditButton.Size = New System.Drawing.Size(62, 38)
-        Me.EditButton.TabIndex = 0
-        Me.EditButton.Text = "Edit"
-        Me.EditButton.UseVisualStyleBackColor = true
-        '
-        'ViewButton
-        '
-        Me.ViewButton.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ViewButton.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ViewButton.FlatAppearance.BorderSize = 0
-        Me.ViewButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ViewButton.Font = New System.Drawing.Font("Verdana", 12!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.ViewButton.Location = New System.Drawing.Point(68, 3)
-        Me.ViewButton.Name = "ViewButton"
-        Me.ViewButton.Size = New System.Drawing.Size(62, 36)
-        Me.ViewButton.TabIndex = 1
-        Me.ViewButton.Text = "View"
-        Me.ViewButton.UseVisualStyleBackColor = true
-        '
-        'HelpButton
-        '
-        Me.HelpButton.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.HelpButton.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.HelpButton.FlatAppearance.BorderSize = 0
-        Me.HelpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.HelpButton.Font = New System.Drawing.Font("Verdana", 12!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.HelpButton.Location = New System.Drawing.Point(136, 3)
-        Me.HelpButton.Name = "HelpButton"
-        Me.HelpButton.Size = New System.Drawing.Size(62, 36)
-        Me.HelpButton.TabIndex = 2
-        Me.HelpButton.Text = "Help"
-        Me.HelpButton.UseVisualStyleBackColor = true
-        '
         'CalculatorForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
@@ -558,13 +558,15 @@ Partial Class CalculatorForm
         Me.BackColor = System.Drawing.SystemColors.WindowText
         Me.ClientSize = New System.Drawing.Size(443, 426)
         Me.Controls.Add(Me.CalculatorPanel)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "CalculatorForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Calculator"
         Me.CalculatorPanel.ResumeLayout(false)
+        Me.CalculatorTopBar.ResumeLayout(false)
         Me.UserInputLabel.ResumeLayout(false)
         Me.UserInputLabel.PerformLayout
-        Me.CalculatorTopBar.ResumeLayout(false)
         Me.ResumeLayout(false)
 
 End Sub
