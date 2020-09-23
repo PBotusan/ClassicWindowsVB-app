@@ -103,9 +103,9 @@ Partial Class CalculatorForm
         Me.CalculatorPanel.Controls.Add(Me.MRButton)
         Me.CalculatorPanel.Controls.Add(Me.MSButton)
         Me.CalculatorPanel.Controls.Add(Me.MPlusButton)
-        Me.CalculatorPanel.Location = New System.Drawing.Point(0, 0)
+        Me.CalculatorPanel.Location = New System.Drawing.Point(-3, 0)
         Me.CalculatorPanel.Name = "CalculatorPanel"
-        Me.CalculatorPanel.Size = New System.Drawing.Size(445, 432)
+        Me.CalculatorPanel.Size = New System.Drawing.Size(447, 432)
         Me.CalculatorPanel.TabIndex = 0
         '
         'operationPerformedLabel
@@ -124,7 +124,7 @@ Partial Class CalculatorForm
         Me.CalculatorTopBar.Controls.Add(Me.CalcHelpButton)
         Me.CalculatorTopBar.Controls.Add(Me.CalcViewButton)
         Me.CalculatorTopBar.Controls.Add(Me.CalcEditButton)
-        Me.CalculatorTopBar.Location = New System.Drawing.Point(2, -2)
+        Me.CalculatorTopBar.Location = New System.Drawing.Point(3, -2)
         Me.CalculatorTopBar.Name = "CalculatorTopBar"
         Me.CalculatorTopBar.Size = New System.Drawing.Size(441, 44)
         Me.CalculatorTopBar.TabIndex = 31
@@ -132,7 +132,9 @@ Partial Class CalculatorForm
         'CalcHelpButton
         '
         Me.CalcHelpButton.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.CalcHelpButton.BackColor = System.Drawing.Color.Gainsboro
         Me.CalcHelpButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CalcHelpButton.FlatAppearance.BorderSize = 0
         Me.CalcHelpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CalcHelpButton.Font = New System.Drawing.Font("Verdana", 12!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.CalcHelpButton.Location = New System.Drawing.Point(136, 3)
@@ -140,7 +142,7 @@ Partial Class CalculatorForm
         Me.CalcHelpButton.Size = New System.Drawing.Size(62, 36)
         Me.CalcHelpButton.TabIndex = 2
         Me.CalcHelpButton.Text = "Help"
-        Me.CalcHelpButton.UseVisualStyleBackColor = true
+        Me.CalcHelpButton.UseVisualStyleBackColor = false
         '
         'CalcViewButton
         '
@@ -174,7 +176,7 @@ Partial Class CalculatorForm
         '
         Me.Panel2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Panel2.Location = New System.Drawing.Point(0, 42)
+        Me.Panel2.Location = New System.Drawing.Point(1, 42)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(445, 5)
         Me.Panel2.TabIndex = 30
@@ -183,7 +185,7 @@ Partial Class CalculatorForm
         '
         Me.Panel1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Panel1.Location = New System.Drawing.Point(12, 146)
+        Me.Panel1.Location = New System.Drawing.Point(13, 146)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(61, 47)
         Me.Panel1.TabIndex = 29
@@ -195,7 +197,7 @@ Partial Class CalculatorForm
         Me.UserInputLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.UserInputLabel.Controls.Add(Me.CalcInputLabel)
         Me.UserInputLabel.Font = New System.Drawing.Font("Verdana", 12!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.UserInputLabel.Location = New System.Drawing.Point(12, 93)
+        Me.UserInputLabel.Location = New System.Drawing.Point(13, 93)
         Me.UserInputLabel.Name = "UserInputLabel"
         Me.UserInputLabel.Size = New System.Drawing.Size(411, 39)
         Me.UserInputLabel.TabIndex = 28
@@ -216,7 +218,7 @@ Partial Class CalculatorForm
         Me.ClearAllButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ClearAllButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.ClearAllButton.ForeColor = System.Drawing.Color.Maroon
-        Me.ClearAllButton.Location = New System.Drawing.Point(342, 146)
+        Me.ClearAllButton.Location = New System.Drawing.Point(343, 146)
         Me.ClearAllButton.Name = "ClearAllButton"
         Me.ClearAllButton.Size = New System.Drawing.Size(81, 47)
         Me.ClearAllButton.TabIndex = 26
@@ -229,7 +231,7 @@ Partial Class CalculatorForm
         Me.ClearButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ClearButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.ClearButton.ForeColor = System.Drawing.Color.Maroon
-        Me.ClearButton.Location = New System.Drawing.Point(256, 146)
+        Me.ClearButton.Location = New System.Drawing.Point(257, 146)
         Me.ClearButton.Name = "ClearButton"
         Me.ClearButton.Size = New System.Drawing.Size(81, 47)
         Me.ClearButton.TabIndex = 25
@@ -242,7 +244,7 @@ Partial Class CalculatorForm
         Me.BackButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BackButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.BackButton.ForeColor = System.Drawing.Color.Maroon
-        Me.BackButton.Location = New System.Drawing.Point(170, 146)
+        Me.BackButton.Location = New System.Drawing.Point(171, 146)
         Me.BackButton.Name = "BackButton"
         Me.BackButton.Size = New System.Drawing.Size(81, 47)
         Me.BackButton.TabIndex = 24
@@ -255,7 +257,7 @@ Partial Class CalculatorForm
         Me.SquareRootButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SquareRootButton.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.SquareRootButton.ForeColor = System.Drawing.Color.Navy
-        Me.SquareRootButton.Location = New System.Drawing.Point(362, 201)
+        Me.SquareRootButton.Location = New System.Drawing.Point(363, 201)
         Me.SquareRootButton.Name = "SquareRootButton"
         Me.SquareRootButton.Size = New System.Drawing.Size(62, 46)
         Me.SquareRootButton.TabIndex = 23
@@ -268,7 +270,7 @@ Partial Class CalculatorForm
         Me.ModuloButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ModuloButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.ModuloButton.ForeColor = System.Drawing.Color.Navy
-        Me.ModuloButton.Location = New System.Drawing.Point(362, 256)
+        Me.ModuloButton.Location = New System.Drawing.Point(363, 256)
         Me.ModuloButton.Name = "ModuloButton"
         Me.ModuloButton.Size = New System.Drawing.Size(62, 46)
         Me.ModuloButton.TabIndex = 22
@@ -281,7 +283,7 @@ Partial Class CalculatorForm
         Me.OnmeTimesXButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.OnmeTimesXButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.OnmeTimesXButton.ForeColor = System.Drawing.Color.Navy
-        Me.OnmeTimesXButton.Location = New System.Drawing.Point(362, 311)
+        Me.OnmeTimesXButton.Location = New System.Drawing.Point(363, 311)
         Me.OnmeTimesXButton.Name = "OnmeTimesXButton"
         Me.OnmeTimesXButton.Size = New System.Drawing.Size(62, 46)
         Me.OnmeTimesXButton.TabIndex = 21
@@ -294,7 +296,7 @@ Partial Class CalculatorForm
         Me.EqualsButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.EqualsButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.EqualsButton.ForeColor = System.Drawing.Color.Red
-        Me.EqualsButton.Location = New System.Drawing.Point(362, 366)
+        Me.EqualsButton.Location = New System.Drawing.Point(363, 366)
         Me.EqualsButton.Name = "EqualsButton"
         Me.EqualsButton.Size = New System.Drawing.Size(62, 46)
         Me.EqualsButton.TabIndex = 20
@@ -307,7 +309,7 @@ Partial Class CalculatorForm
         Me.DevideButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DevideButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.DevideButton.ForeColor = System.Drawing.Color.Red
-        Me.DevideButton.Location = New System.Drawing.Point(295, 201)
+        Me.DevideButton.Location = New System.Drawing.Point(296, 201)
         Me.DevideButton.Name = "DevideButton"
         Me.DevideButton.Size = New System.Drawing.Size(62, 46)
         Me.DevideButton.TabIndex = 19
@@ -320,7 +322,7 @@ Partial Class CalculatorForm
         Me.TimesButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.TimesButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.TimesButton.ForeColor = System.Drawing.Color.Red
-        Me.TimesButton.Location = New System.Drawing.Point(295, 256)
+        Me.TimesButton.Location = New System.Drawing.Point(296, 256)
         Me.TimesButton.Name = "TimesButton"
         Me.TimesButton.Size = New System.Drawing.Size(62, 46)
         Me.TimesButton.TabIndex = 18
@@ -333,7 +335,7 @@ Partial Class CalculatorForm
         Me.MinusButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MinusButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.MinusButton.ForeColor = System.Drawing.Color.Red
-        Me.MinusButton.Location = New System.Drawing.Point(295, 311)
+        Me.MinusButton.Location = New System.Drawing.Point(296, 311)
         Me.MinusButton.Name = "MinusButton"
         Me.MinusButton.Size = New System.Drawing.Size(62, 46)
         Me.MinusButton.TabIndex = 17
@@ -346,7 +348,7 @@ Partial Class CalculatorForm
         Me.PlusButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PlusButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.PlusButton.ForeColor = System.Drawing.Color.Red
-        Me.PlusButton.Location = New System.Drawing.Point(295, 367)
+        Me.PlusButton.Location = New System.Drawing.Point(296, 367)
         Me.PlusButton.Name = "PlusButton"
         Me.PlusButton.Size = New System.Drawing.Size(62, 46)
         Me.PlusButton.TabIndex = 16
@@ -359,7 +361,7 @@ Partial Class CalculatorForm
         Me.DigitNineButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DigitNineButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.DigitNineButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(192,Byte),Integer))
-        Me.DigitNineButton.Location = New System.Drawing.Point(228, 201)
+        Me.DigitNineButton.Location = New System.Drawing.Point(229, 201)
         Me.DigitNineButton.Name = "DigitNineButton"
         Me.DigitNineButton.Size = New System.Drawing.Size(62, 46)
         Me.DigitNineButton.TabIndex = 15
@@ -372,7 +374,7 @@ Partial Class CalculatorForm
         Me.DigitSixButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DigitSixButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.DigitSixButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(192,Byte),Integer))
-        Me.DigitSixButton.Location = New System.Drawing.Point(228, 256)
+        Me.DigitSixButton.Location = New System.Drawing.Point(229, 256)
         Me.DigitSixButton.Name = "DigitSixButton"
         Me.DigitSixButton.Size = New System.Drawing.Size(62, 46)
         Me.DigitSixButton.TabIndex = 14
@@ -385,7 +387,7 @@ Partial Class CalculatorForm
         Me.DigitThreeButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DigitThreeButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.DigitThreeButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(192,Byte),Integer))
-        Me.DigitThreeButton.Location = New System.Drawing.Point(228, 311)
+        Me.DigitThreeButton.Location = New System.Drawing.Point(229, 311)
         Me.DigitThreeButton.Name = "DigitThreeButton"
         Me.DigitThreeButton.Size = New System.Drawing.Size(62, 46)
         Me.DigitThreeButton.TabIndex = 13
@@ -398,7 +400,7 @@ Partial Class CalculatorForm
         Me.DigitPointButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DigitPointButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.DigitPointButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(192,Byte),Integer))
-        Me.DigitPointButton.Location = New System.Drawing.Point(228, 366)
+        Me.DigitPointButton.Location = New System.Drawing.Point(229, 366)
         Me.DigitPointButton.Name = "DigitPointButton"
         Me.DigitPointButton.Size = New System.Drawing.Size(62, 46)
         Me.DigitPointButton.TabIndex = 12
@@ -411,7 +413,7 @@ Partial Class CalculatorForm
         Me.DigitEightButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DigitEightButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.DigitEightButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(192,Byte),Integer))
-        Me.DigitEightButton.Location = New System.Drawing.Point(161, 201)
+        Me.DigitEightButton.Location = New System.Drawing.Point(162, 201)
         Me.DigitEightButton.Name = "DigitEightButton"
         Me.DigitEightButton.Size = New System.Drawing.Size(62, 46)
         Me.DigitEightButton.TabIndex = 11
@@ -424,7 +426,7 @@ Partial Class CalculatorForm
         Me.DigitFiveButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DigitFiveButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.DigitFiveButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(192,Byte),Integer))
-        Me.DigitFiveButton.Location = New System.Drawing.Point(161, 256)
+        Me.DigitFiveButton.Location = New System.Drawing.Point(162, 256)
         Me.DigitFiveButton.Name = "DigitFiveButton"
         Me.DigitFiveButton.Size = New System.Drawing.Size(62, 46)
         Me.DigitFiveButton.TabIndex = 10
@@ -437,7 +439,7 @@ Partial Class CalculatorForm
         Me.DigitTwoButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DigitTwoButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.DigitTwoButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(192,Byte),Integer))
-        Me.DigitTwoButton.Location = New System.Drawing.Point(161, 311)
+        Me.DigitTwoButton.Location = New System.Drawing.Point(162, 311)
         Me.DigitTwoButton.Name = "DigitTwoButton"
         Me.DigitTwoButton.Size = New System.Drawing.Size(62, 46)
         Me.DigitTwoButton.TabIndex = 9
@@ -448,9 +450,9 @@ Partial Class CalculatorForm
         '
         Me.PlusMinusButton.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PlusMinusButton.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PlusMinusButton.Font = New System.Drawing.Font("Verdana", 18!)
+        Me.PlusMinusButton.Font = New System.Drawing.Font("Verdana", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.PlusMinusButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(192,Byte),Integer))
-        Me.PlusMinusButton.Location = New System.Drawing.Point(161, 366)
+        Me.PlusMinusButton.Location = New System.Drawing.Point(162, 366)
         Me.PlusMinusButton.Name = "PlusMinusButton"
         Me.PlusMinusButton.Size = New System.Drawing.Size(62, 46)
         Me.PlusMinusButton.TabIndex = 8
@@ -463,7 +465,7 @@ Partial Class CalculatorForm
         Me.DigitSevenButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DigitSevenButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.DigitSevenButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(192,Byte),Integer))
-        Me.DigitSevenButton.Location = New System.Drawing.Point(94, 201)
+        Me.DigitSevenButton.Location = New System.Drawing.Point(95, 201)
         Me.DigitSevenButton.Name = "DigitSevenButton"
         Me.DigitSevenButton.Size = New System.Drawing.Size(62, 46)
         Me.DigitSevenButton.TabIndex = 7
@@ -476,7 +478,7 @@ Partial Class CalculatorForm
         Me.DigitFourButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DigitFourButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.DigitFourButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(192,Byte),Integer))
-        Me.DigitFourButton.Location = New System.Drawing.Point(93, 256)
+        Me.DigitFourButton.Location = New System.Drawing.Point(94, 256)
         Me.DigitFourButton.Name = "DigitFourButton"
         Me.DigitFourButton.Size = New System.Drawing.Size(62, 46)
         Me.DigitFourButton.TabIndex = 6
@@ -489,7 +491,7 @@ Partial Class CalculatorForm
         Me.DigitOneButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DigitOneButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.DigitOneButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(192,Byte),Integer))
-        Me.DigitOneButton.Location = New System.Drawing.Point(94, 311)
+        Me.DigitOneButton.Location = New System.Drawing.Point(95, 311)
         Me.DigitOneButton.Name = "DigitOneButton"
         Me.DigitOneButton.Size = New System.Drawing.Size(62, 46)
         Me.DigitOneButton.TabIndex = 5
@@ -502,7 +504,7 @@ Partial Class CalculatorForm
         Me.DigitZeroButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DigitZeroButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.DigitZeroButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(192,Byte),Integer))
-        Me.DigitZeroButton.Location = New System.Drawing.Point(94, 366)
+        Me.DigitZeroButton.Location = New System.Drawing.Point(95, 366)
         Me.DigitZeroButton.Name = "DigitZeroButton"
         Me.DigitZeroButton.Size = New System.Drawing.Size(62, 46)
         Me.DigitZeroButton.TabIndex = 4
@@ -512,54 +514,58 @@ Partial Class CalculatorForm
         'MCButton
         '
         Me.MCButton.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.MCButton.BackColor = System.Drawing.Color.DarkGray
         Me.MCButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MCButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.MCButton.ForeColor = System.Drawing.Color.Red
-        Me.MCButton.Location = New System.Drawing.Point(10, 201)
+        Me.MCButton.Location = New System.Drawing.Point(11, 201)
         Me.MCButton.Name = "MCButton"
         Me.MCButton.Size = New System.Drawing.Size(62, 46)
         Me.MCButton.TabIndex = 3
         Me.MCButton.Text = "MC"
-        Me.MCButton.UseVisualStyleBackColor = true
+        Me.MCButton.UseVisualStyleBackColor = false
         '
         'MRButton
         '
         Me.MRButton.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.MRButton.BackColor = System.Drawing.Color.DarkGray
         Me.MRButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MRButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.MRButton.ForeColor = System.Drawing.Color.Red
-        Me.MRButton.Location = New System.Drawing.Point(11, 256)
+        Me.MRButton.Location = New System.Drawing.Point(12, 256)
         Me.MRButton.Name = "MRButton"
         Me.MRButton.Size = New System.Drawing.Size(62, 46)
         Me.MRButton.TabIndex = 2
         Me.MRButton.Text = "MR"
-        Me.MRButton.UseVisualStyleBackColor = true
+        Me.MRButton.UseVisualStyleBackColor = false
         '
         'MSButton
         '
         Me.MSButton.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.MSButton.BackColor = System.Drawing.Color.DarkGray
         Me.MSButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MSButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.MSButton.ForeColor = System.Drawing.Color.Red
-        Me.MSButton.Location = New System.Drawing.Point(10, 311)
+        Me.MSButton.Location = New System.Drawing.Point(11, 311)
         Me.MSButton.Name = "MSButton"
         Me.MSButton.Size = New System.Drawing.Size(62, 46)
         Me.MSButton.TabIndex = 1
         Me.MSButton.Text = "MS"
-        Me.MSButton.UseVisualStyleBackColor = true
+        Me.MSButton.UseVisualStyleBackColor = false
         '
         'MPlusButton
         '
         Me.MPlusButton.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.MPlusButton.BackColor = System.Drawing.Color.DarkGray
         Me.MPlusButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MPlusButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.MPlusButton.ForeColor = System.Drawing.Color.Red
-        Me.MPlusButton.Location = New System.Drawing.Point(11, 366)
+        Me.MPlusButton.Location = New System.Drawing.Point(12, 366)
         Me.MPlusButton.Name = "MPlusButton"
         Me.MPlusButton.Size = New System.Drawing.Size(62, 46)
         Me.MPlusButton.TabIndex = 0
         Me.MPlusButton.Text = "M+"
-        Me.MPlusButton.UseVisualStyleBackColor = true
+        Me.MPlusButton.UseVisualStyleBackColor = false
         '
         'CalculatorForm
         '
