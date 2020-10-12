@@ -31,7 +31,7 @@
     Dim currentLabel as String
 
 
-    Private Sub User_button_click(sender As Object, e As EventArgs) Handles DigitZeroButton.Click, MSButton.Click, MRButton.Click, MPlusButton.Click, MCButton.Click, DigitTwoButton.Click, DigitThreeButton.Click, DigitSixButton.Click, DigitSevenButton.Click, DigitPointButton.Click, DigitOneButton.Click, DigitNineButton.Click, DigitFourButton.Click, DigitFiveButton.Click, DigitEightButton.Click
+    Private Sub User_button_click(sender As Object, e As EventArgs) Handles DigitZeroButton.Click, DigitTwoButton.Click, DigitThreeButton.Click, DigitSixButton.Click, DigitSevenButton.Click, DigitPointButton.Click, DigitOneButton.Click, DigitNineButton.Click, DigitFourButton.Click, DigitFiveButton.Click, DigitEightButton.Click, MSButton.Click, MRButton.Click, MPlusButton.Click, MCButton.Click
         Try
             userButtonInput = sender
             
@@ -55,7 +55,7 @@
     
     End Sub
 
-    Private Sub Operator_Button(sender As Object, e As EventArgs) Handles PlusButton.Click, TimesButton.Click, MinusButton.Click, DevideButton.Click, SquareRootButton.Click, OnmeTimesXButton.Click, ModuloButton.Click, PlusMinusButton.Click
+    Private Sub Operator_Button(sender As Object, e As EventArgs) Handles PlusButton.Click, TimesButton.Click, MinusButton.Click, DevideButton.Click, SquareRootButton.Click, ModuloButton.Click, PlusMinusButton.Click
         Try 
             userOperationButtonInput = sender
             currentOperation = userOperationButtonInput.Text
@@ -90,26 +90,30 @@
              ElseIf currentOperation = "%" then
                 CalcInputLabel.Text = value Mod double.Parse(CalcInputLabel.Text)
 
-             ElseIf currentOperation = "1/x" then
-                CalcInputLabel.Text = value Mod double.Parse(CalcInputLabel.Text)
-
              ElseIf currentOperation = "+/-" then
-                If CalcInputLabel.Text < -0 then
-                    'value = CalcInputLabel.Text.
-                Else
-                    value = CalcInputLabel.Text.TrimStart("-")
-                    CalcInputLabel.Text = value
-                End if
-
+                CheckForPlusMinus()
+               
         End If
         
-         
-
         Catch ex As Exception
             'todo logger
         End Try
        
 
+    End Sub
+
+
+    Sub CheckForPlusMinus
+        value = CalcInputLabel.Text
+        If value < 0 then
+            Calculate()
+        Else
+            Calculate()
+        End if
+    End Sub
+
+    Sub Calculate
+        CalcInputLabel.Text = value - value - value
     End Sub
 
      Private Sub ClearButton_Click(sender As Object, e As EventArgs) Handles ClearButton.Click

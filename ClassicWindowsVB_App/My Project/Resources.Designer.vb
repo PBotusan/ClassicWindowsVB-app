@@ -63,6 +63,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property artage_io_48168_1600879437() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("artage-io-48168_1600879437", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property calculator95() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("calculator95", resourceCulture)
@@ -86,6 +96,26 @@ Namespace My.Resources
         Friend ReadOnly Property calculator98() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("calculator98", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property win95desklamp() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("win95desklamp", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property win95desklamp1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("win95desklamp1", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

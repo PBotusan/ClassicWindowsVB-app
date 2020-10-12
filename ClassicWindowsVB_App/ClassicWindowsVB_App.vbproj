@@ -140,5 +140,14 @@
   <ItemGroup>
     <None Include="Resources\calculator95scaled.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\artage-io-48168_1600879437.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win95desklamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win95desklamp1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

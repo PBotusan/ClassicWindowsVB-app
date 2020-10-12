@@ -32,13 +32,11 @@ Partial Class CalculatorForm
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.UserInputLabel = New System.Windows.Forms.FlowLayoutPanel()
-        Me.CalcInputLabel = New System.Windows.Forms.Label()
         Me.ClearAllButton = New System.Windows.Forms.Button()
         Me.ClearButton = New System.Windows.Forms.Button()
         Me.BackButton = New System.Windows.Forms.Button()
         Me.SquareRootButton = New System.Windows.Forms.Button()
         Me.ModuloButton = New System.Windows.Forms.Button()
-        Me.OnmeTimesXButton = New System.Windows.Forms.Button()
         Me.EqualsButton = New System.Windows.Forms.Button()
         Me.DevideButton = New System.Windows.Forms.Button()
         Me.TimesButton = New System.Windows.Forms.Button()
@@ -56,6 +54,7 @@ Partial Class CalculatorForm
         Me.DigitFourButton = New System.Windows.Forms.Button()
         Me.DigitOneButton = New System.Windows.Forms.Button()
         Me.DigitZeroButton = New System.Windows.Forms.Button()
+        Me.CalcInputLabel = New System.Windows.Forms.Label()
         Me.MCButton = New System.Windows.Forms.Button()
         Me.MRButton = New System.Windows.Forms.Button()
         Me.MSButton = New System.Windows.Forms.Button()
@@ -81,7 +80,6 @@ Partial Class CalculatorForm
         Me.CalculatorPanel.Controls.Add(Me.BackButton)
         Me.CalculatorPanel.Controls.Add(Me.SquareRootButton)
         Me.CalculatorPanel.Controls.Add(Me.ModuloButton)
-        Me.CalculatorPanel.Controls.Add(Me.OnmeTimesXButton)
         Me.CalculatorPanel.Controls.Add(Me.EqualsButton)
         Me.CalculatorPanel.Controls.Add(Me.DevideButton)
         Me.CalculatorPanel.Controls.Add(Me.TimesButton)
@@ -196,21 +194,12 @@ Partial Class CalculatorForm
         Me.UserInputLabel.BackColor = System.Drawing.SystemColors.Window
         Me.UserInputLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.UserInputLabel.Controls.Add(Me.CalcInputLabel)
+        Me.UserInputLabel.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft
         Me.UserInputLabel.Font = New System.Drawing.Font("Verdana", 12!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.UserInputLabel.Location = New System.Drawing.Point(13, 93)
         Me.UserInputLabel.Name = "UserInputLabel"
         Me.UserInputLabel.Size = New System.Drawing.Size(411, 39)
         Me.UserInputLabel.TabIndex = 28
-        '
-        'CalcInputLabel
-        '
-        Me.CalcInputLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.CalcInputLabel.AutoSize = true
-        Me.CalcInputLabel.Location = New System.Drawing.Point(3, 0)
-        Me.CalcInputLabel.Name = "CalcInputLabel"
-        Me.CalcInputLabel.Size = New System.Drawing.Size(18, 18)
-        Me.CalcInputLabel.TabIndex = 0
-        Me.CalcInputLabel.Text = "0"
         '
         'ClearAllButton
         '
@@ -277,28 +266,15 @@ Partial Class CalculatorForm
         Me.ModuloButton.Text = "%"
         Me.ModuloButton.UseVisualStyleBackColor = true
         '
-        'OnmeTimesXButton
-        '
-        Me.OnmeTimesXButton.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.OnmeTimesXButton.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.OnmeTimesXButton.Font = New System.Drawing.Font("Verdana", 18!)
-        Me.OnmeTimesXButton.ForeColor = System.Drawing.Color.Navy
-        Me.OnmeTimesXButton.Location = New System.Drawing.Point(363, 311)
-        Me.OnmeTimesXButton.Name = "OnmeTimesXButton"
-        Me.OnmeTimesXButton.Size = New System.Drawing.Size(62, 46)
-        Me.OnmeTimesXButton.TabIndex = 21
-        Me.OnmeTimesXButton.Text = "1/x"
-        Me.OnmeTimesXButton.UseVisualStyleBackColor = true
-        '
         'EqualsButton
         '
         Me.EqualsButton.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.EqualsButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.EqualsButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.EqualsButton.ForeColor = System.Drawing.Color.Red
-        Me.EqualsButton.Location = New System.Drawing.Point(363, 366)
+        Me.EqualsButton.Location = New System.Drawing.Point(363, 311)
         Me.EqualsButton.Name = "EqualsButton"
-        Me.EqualsButton.Size = New System.Drawing.Size(62, 46)
+        Me.EqualsButton.Size = New System.Drawing.Size(62, 101)
         Me.EqualsButton.TabIndex = 20
         Me.EqualsButton.Text = "="
         Me.EqualsButton.UseVisualStyleBackColor = true
@@ -511,6 +487,18 @@ Partial Class CalculatorForm
         Me.DigitZeroButton.Text = "0"
         Me.DigitZeroButton.UseVisualStyleBackColor = true
         '
+        'CalcInputLabel
+        '
+        Me.CalcInputLabel.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.CalcInputLabel.AutoSize = true
+        Me.CalcInputLabel.Font = New System.Drawing.Font("Verdana", 18!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.CalcInputLabel.Location = New System.Drawing.Point(376, 0)
+        Me.CalcInputLabel.Name = "CalcInputLabel"
+        Me.CalcInputLabel.Size = New System.Drawing.Size(28, 29)
+        Me.CalcInputLabel.TabIndex = 0
+        Me.CalcInputLabel.Text = "0"
+        Me.CalcInputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
         'MCButton
         '
         Me.MCButton.Anchor = System.Windows.Forms.AnchorStyles.None
@@ -518,7 +506,7 @@ Partial Class CalculatorForm
         Me.MCButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MCButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.MCButton.ForeColor = System.Drawing.Color.Red
-        Me.MCButton.Location = New System.Drawing.Point(11, 201)
+        Me.MCButton.Location = New System.Drawing.Point(12, 201)
         Me.MCButton.Name = "MCButton"
         Me.MCButton.Size = New System.Drawing.Size(62, 46)
         Me.MCButton.TabIndex = 3
@@ -532,7 +520,7 @@ Partial Class CalculatorForm
         Me.MRButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MRButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.MRButton.ForeColor = System.Drawing.Color.Red
-        Me.MRButton.Location = New System.Drawing.Point(12, 256)
+        Me.MRButton.Location = New System.Drawing.Point(13, 256)
         Me.MRButton.Name = "MRButton"
         Me.MRButton.Size = New System.Drawing.Size(62, 46)
         Me.MRButton.TabIndex = 2
@@ -546,7 +534,7 @@ Partial Class CalculatorForm
         Me.MSButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MSButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.MSButton.ForeColor = System.Drawing.Color.Red
-        Me.MSButton.Location = New System.Drawing.Point(11, 311)
+        Me.MSButton.Location = New System.Drawing.Point(12, 311)
         Me.MSButton.Name = "MSButton"
         Me.MSButton.Size = New System.Drawing.Size(62, 46)
         Me.MSButton.TabIndex = 1
@@ -560,7 +548,7 @@ Partial Class CalculatorForm
         Me.MPlusButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MPlusButton.Font = New System.Drawing.Font("Verdana", 18!)
         Me.MPlusButton.ForeColor = System.Drawing.Color.Red
-        Me.MPlusButton.Location = New System.Drawing.Point(12, 366)
+        Me.MPlusButton.Location = New System.Drawing.Point(13, 366)
         Me.MPlusButton.Name = "MPlusButton"
         Me.MPlusButton.Size = New System.Drawing.Size(62, 46)
         Me.MPlusButton.TabIndex = 0
@@ -589,16 +577,11 @@ Partial Class CalculatorForm
 End Sub
 
     Friend WithEvents CalculatorPanel As Panel
-    Friend WithEvents MCButton As Button
-    Friend WithEvents MRButton As Button
-    Friend WithEvents MSButton As Button
-    Friend WithEvents MPlusButton As Button
     Friend WithEvents ClearAllButton As Button
     Friend WithEvents ClearButton As Button
     Friend WithEvents BackButton As Button
     Friend WithEvents SquareRootButton As Button
     Friend WithEvents ModuloButton As Button
-    Friend WithEvents OnmeTimesXButton As Button
     Friend WithEvents EqualsButton As Button
     Friend WithEvents DevideButton As Button
     Friend WithEvents TimesButton As Button
@@ -617,7 +600,6 @@ End Sub
     Friend WithEvents DigitOneButton As Button
     Friend WithEvents DigitZeroButton As Button
     Friend WithEvents UserInputLabel As FlowLayoutPanel
-    Friend WithEvents CalcInputLabel As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents CalculatorTopBar As Panel
@@ -625,4 +607,9 @@ End Sub
     Friend WithEvents CalcViewButton As Button
     Friend WithEvents CalcEditButton As Button
     Friend WithEvents operationPerformedLabel As Label
+    Friend WithEvents CalcInputLabel As Label
+    Friend WithEvents MCButton As Button
+    Friend WithEvents MRButton As Button
+    Friend WithEvents MSButton As Button
+    Friend WithEvents MPlusButton As Button
 End Class

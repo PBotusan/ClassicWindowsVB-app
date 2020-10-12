@@ -118,16 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="calculator95" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\calculator95.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="WindowsLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WindowsLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="calculator98" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calculator98.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="calculator95" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calculator95.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="calculator95scaled" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calculator95scaled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="artage-io-48168_1600879437" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\artage-io-48168_1600879437.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="win95desklamp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\win95desklamp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="win95desklamp1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\win95desklamp1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
