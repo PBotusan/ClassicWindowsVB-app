@@ -3,7 +3,7 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Learned](#setup)
+* [Learned](#learned)
 
 ## General info
 Windows forms application made in VisualBasic. is based on the Windows 95 look/feel.
